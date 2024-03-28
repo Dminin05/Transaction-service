@@ -10,3 +10,8 @@
 ```sh
    docker compose up
 ```
+
+## Here you can see swagger documentation: 
+```sh
+   http://localhost:8080/swagger-ui/index.html
+```
