@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+
+spring:
+
+  datasource:
+
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          currency:
+            url: https://api.twelvedata.com/
+
+  currency:
+    apikey: "2e1ee9cbca7744d8addefa66ec1bcc0d"
+
+  jpa:
+    show-sql: true
